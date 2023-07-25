@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="calculo"></p>
+    <script>
+
+     let numero = Number(window.prompt('digite um valor (mm): '))
+     let cm = numero/10
+     let dm = cm/10
+     let m = dm/10
+     let dam = m/10
+     let hm = dam/10
+     let km = hm/10
+
+        document.getElementById('calculo').innerHTML = `${numero} mn vale ${cm} cm <br>${cm} cm vale ${dm} dm <br>${dm} dm vale ${m} m <br>${m} m vale ${dam} dam <br>${dam} dam vale ${hm} hm <br>${hm} hm vale ${km} km <br>`
+    </script>
+    
+</body>
+</html>

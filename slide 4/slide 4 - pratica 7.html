@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="resultado"></p>
+    <script>
+        vinicial = Number(window.prompt('Informe o valor pago: '))
+        desconto = Number(window.prompt('Informe o desconto(%): '))
+
+        calculo = (vinicial/100)*desconto
+        resultado = vinicial-calculo
+
+        document.getElementById('resultado').innerHTML = `O valor a paga é: R$${resultado}`
+    </script>
+</body>
+</html>

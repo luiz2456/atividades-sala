@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        v1 = Number(window.prompt('digite o 1° valor: '))
+        v2 = Number(window.prompt('digite o 2° valor: '))
+        v3 = Number(window.prompt('digite o 3° valor: '))
+
+
+         var aux = v1;
+             if(v2>v1){
+                aux=v2;
+                v2=v1;
+                v1=aux;
+            }
+
+            if(v3 > v1){
+                aux=v3;
+                v3=v1;
+                v1=aux;
+                }
+
+            if(v3 > v2){
+                aux=v3;
+                v3=v2;
+                v2=aux;
+            }
+       
+        document.write(v1,'-',v2,'-',v3)
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = Number(window.prompt('digite a: '))
+        b = Number(window.prompt('digite b: '))
+        c = Number(window.prompt('digite c: '))
+
+        delta = (b*b)+(-4*a*c)
+        if(delta<=0)
+        {
+            document.write('delta menor que 0)<br> portanto não existe raizes reais')
+        }
+
+        else
+        {
+            document.write(Math.sqrt(delta))
+        }
+    </script>
+</body>
+</html>

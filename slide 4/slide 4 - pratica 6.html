@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="resultado"></div>
+<script>
+base = Number(window.prompt('Entre com o valor da base em (cm): '))
+altura = Number(window.prompt('Entre com o valor da altura em (cm): '))
+
+area = (base*altura)/2
+
+document.getElementById('resultado').innerHTML = `A área do triângulo é ${area} cm²`
+
+</script>
+</body>
+</html>

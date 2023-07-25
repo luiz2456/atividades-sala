@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="res"></p>
+
+<script>
+    a = Number(window.prompt('Informe o valor de A: '))
+    b = Number(window.prompt('Informe o valor de B: '))
+    c = Number(window.prompt('Informe o valor de C: '))
+
+delta = (b*b)-4*a*c
+
+formula1 = (-b) - delta/2
+formula2 = (-b) + delta/2
+
+document.getElementById('res1').innerHTML = `hipotenusa: ${res}`
+document.getElementById('res2').innerHTML = `hipotenusa: ${res}`
+</script>
+</body>
+</html>

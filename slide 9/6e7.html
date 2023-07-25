@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          document.write('---------------------------------------------------------<br>')
+        document.write('sinal&nbsp&nbsp&nbsp&nbsp&nbsp', '  operação<br>')
+        document.write('---------------------------------------------------------<br>')
+        document.write('+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp','adição<br>')
+        document.write('-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp','subtração<br>')
+        document.write('*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp','multiplicação<br>')
+        document.write('/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp','divisão<br>')
+        document.write('---------------------------------------------------------<br>')
+
+       v1 = Number(window.prompt('digite 0 1° valor: '))
+       v2 = Number(window.prompt('digite 0 2° valor: '))
+       operador = window.prompt('digite 0 sinal da operação: ')
+
+       if(operador=='+')
+       {
+        document.write(v1+v2)
+       }
+
+       else if(operador=='-')
+       {
+        document.write(v1-v2)
+       }
+       
+       else if(operador=='*')
+       {
+        document.write(v1*v2)
+       }
+
+       else if(operador=='/')
+       {
+        document.write(v1/v2)
+       }
+
+       else if(v1=='sair' || v2=='sair' || codigo=='sair')
+       {
+        document.write('você saiu')
+       }
+
+    </script>
+</body>
+</html>

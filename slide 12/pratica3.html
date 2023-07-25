@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let produto = {
+        nome:"bolacha",
+        quantidade: 14,
+        atualizar: function(){
+      nome = window.prompt("informe o nome do produto: ")
+      if(nome == this.nome){
+        quantidadeAdd = Number(prompt("Informe a quantidade a ser adicionada ao estoque:"))
+        this.quantidade += quantidadeAdd
+        document.write(`valor atualizado do estoque: `,this.quantidade)
+      }
+      else{
+        document.write("invalido")
+      }
+    }
+}
+produto.atualizar()
+
+        
+    </script>   
+</body>
+</html>

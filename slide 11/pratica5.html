@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = Number(window.prompt('digite valor de A: '))
+        b = Number(window.prompt('digite valor de B: '))
+        c = Number(window.prompt('digite valor de C: '))
+
+
+        function equacao()
+        {
+           delta = b*b-4*(a*c)
+          raiz = Math.sqrt(delta)
+            document.write('o valor de delta é: ',delta,'<br> a raiz é: ',raiz  )
+
+
+        }
+
+        console.log(equacao())
+    </script>
+</body>
+</html>

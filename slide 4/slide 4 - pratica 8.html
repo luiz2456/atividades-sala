@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div id="resultado"></div>
+<body>
+    <script>
+          cateto1 = Number(window.prompt('Informe o valor do cateto 1: '))
+          cateto2 = Number(window.prompt('Informe o valor cateto 2: '))
+      
+
+           
+           hipotenusa = (cateto1**2)+(cateto2**2)
+
+           res = Math.sqrt(hipotenusa)
+               
+           document.getElementById('resultado').innerHTML = `hipotenusa: ${res}`
+    </script>
+</body>
+</html>

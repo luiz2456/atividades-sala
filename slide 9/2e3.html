@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let i=0  
+       let variavel
+    sorteador =  Math.floor(Math.random() * 2)
+   
+        
+         
+            while(variavel!='sair')
+            {
+                variavel = window.prompt('cara,coroa ou sair? ')
+                if(variavel=='cara' && sorteador==0 ||  variavel=='coroa' && sorteador==1)
+            {
+                document.write('o resultado foi: ',sorteador,' você ganhou<br>')
+                i=i+1
+                document.write('pontuação: ',i,'<br>')
+            }
+
+            else if(variavel=='cara' && sorteador!=0 ||  variavel=='coroa' && sorteador!=1)
+            {
+                document.write('<br>o resultado foi: ', sorteador,' você perdeu<br>')
+                i=i-1
+                document.write('<br>pontuação: ',i,'<br>')
+            }
+            }
+            
+        document.write('você saiu')
+
+       
+    </script>
+</body>
+</html>

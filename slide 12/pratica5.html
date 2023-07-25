@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let produtos =
+        {
+        
+            prod1: 45,
+            prod2: 58,
+            prod3: 600     
+        
+        }
+        function operacao()
+        {
+            variavel = Object.values(produtos)
+            let soma = 0
+            for(let i = 0; i < variavel.length; i++){
+                soma = soma + Number(variavel[i])
+            }
+         document.write('a soma é: ',soma)
+        }
+        operacao()
+        
+     
+    </script> 
+</body>
+</html>

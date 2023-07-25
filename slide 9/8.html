@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let km=0
+        let litros=0
+        let kmtotal = 0
+        let viagem = 0
+        let litrostotal = 0
+        while(true)
+        {                           
+            let km =  Number(window.prompt('kilometros : '))
+            let litros =  Number(window.prompt('quantidade de litros gasolina gastos  : '))
+            let opcao = window.prompt("opção: (c para continuar e s para sair)")   
+ 
+            
+        
+          
+            if(opcao=="s"){
+            kmtotal = kmtotal+km
+            litrostotal = litrostotal+litros
+             viagem++
+            document.write('consumo: ',km/litros,'km/l<br>')
+
+                break
+            }
+
+            else{
+            kmtotal = kmtotal+km
+            litrostotal = litrostotal+litros
+            viagem++
+            document.write('consumo: ',km/litros,'km/l<br>')
+            }
+        }
+
+        let mediakm = kmtotal/viagem
+        let litroskm = litrostotal/viagem
+        document.write('---------------------------------------------------------<br>')
+        document.write('<br<>resumo das viagens: <br>')
+        
+        document.write('quilometros total: ',kmtotal,'<br>')
+        document.write('litros total: ',litrostotal,'<br>')
+        document.write('média de quilometros: ',mediakm,'<br>')
+        document.write('média de litros: ',litroskm)
+
+
+
+
+     
+
+
+    </script>
+</body>
+</html>

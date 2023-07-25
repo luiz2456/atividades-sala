@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mensagem"></div>
+    <script>
+        idade = Number(window.prompt('Qual a sua idade: '))
+        titulo = window.prompt('tem título(s/n): ') 
+
+
+        if (idade>=16 && titulo =='s')
+        {
+             document.getElementById('mensagem').innerHTML = 'pode votar'
+        }
+
+        else
+            {
+                document.getElementById('mensagem').innerHTML = 'não pode votar'
+            }
+      
+    </script>
+</body>
+</html>

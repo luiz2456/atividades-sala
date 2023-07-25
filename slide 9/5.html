@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        document.write('---------------------------------------------------------<br>')
+        document.write('codigo', '  codição de pagamento<br>')
+        document.write('---------------------------------------------------------<br>')
+        document.write('1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp','A vista em dinheiro ou cheque, recebe 10% de desconto<br>')
+        document.write('2&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp','A vista no cartão de crédito, recebe 5% de desconto<br>')
+        document.write('3&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp','Em duas vezes,preço normal da etiqueta sem juros<br>')
+        document.write('4&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp','Em três vezes,preço normal da etiqueta mais 10% de juros<br>')
+        document.write('---------------------------------------------------------<br>')
+        let valinicial = Number(window.prompt('digite valor do produto: '))
+        let codigo = Number(window.prompt('digite codigo: '))
+        let calculo
+        let vfinal
+        if(codigo=='1')
+        {
+            calculo = ((valinicial/100)*10)
+            vfinal = (valinicial-calculo)
+            document.write('valor final: ',vfinal)
+        }
+
+        else if(codigo=='2')
+        {
+            calculo = ((valinicial/100)*5)
+            vfinal = (valinicial-calculo)
+            document.write('valor final: ',vfinal)
+        }
+
+        else if(codigo=='3')
+        {
+           
+           document.write('valor final: ',valinicial,'<br>','parcelas: 2x de', valinicial/2)
+        }
+
+        else if(codigo=='4')
+        {
+            calculo = ((valinicial/100)*10)
+            vfinal = (valinicial+calculo)
+           document.write('valor final: ',vfinal,'<br>','parcelas: 2x de', vfinal/2)
+        }
+
+
+    </script>
+</body>
+</html>

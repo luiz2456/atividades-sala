@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            conta = Number(window.prompt(' a) Número de conta: '))
+            saldoini = Number(window.prompt(' b) Saldo no início do mês: '))
+            icobrados = Number(window.prompt('c) Total de todos os itens cobrados desse cliente no mês: '))
+            credaplicados = Number(window.prompt('d) Total de créditos aplicados ao cliente no mês:'))
+            limite = Number(window.prompt('e) Limite de crédito autorizado: '))
+
+       
+            saldo = (saldoini+icobrados-credaplicados)
+            document.write(saldo,'<br>')
+
+            if(saldo>limite)
+            {
+                document.write('Você excedeu o limite')
+            }
+
+            else
+            {
+                document.write('Não excedeu o limite')
+            }
+
+
+
+
+    </script>
+</body>
+</html>

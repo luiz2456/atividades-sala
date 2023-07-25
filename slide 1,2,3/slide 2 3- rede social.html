@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes sociais</title>
+</head>
+<body>
+    <p id="welcome"></p>
+    <p id="idade"></p>
+    <p id="peso"></p>
+    <p id="altura"></p>
+    <p id="status"></p>
+    <p id="ocupacao"></p>
+    <script>
+      let nome = window.prompt("Qual é o seu nome: ")
+      let idade = Number(window.prompt(`qual a sua idade: `))
+      let peso =  Number(window.prompt(`qual é o seu peso: `))
+      let altura = Number(window.prompt(`qual a sua altura: `))
+      let status = window.prompt("É solteiro(a)? ")
+     let ocupacao =  window.prompt("Qual é o seu ocupação: ")
+       
+      document.getElementById("welcome").innerHTML = `***********************************************************<br>Seja bem vindo ${nome} <br>dados cadastrados na rede social:  <br> ***********************************************************`
+      document.getElementById("idade").innerHTML = `Sua idade é: ${idade}`
+      document.getElementById("peso").innerHTML = `Seu peso é: ${peso}`
+      document.getElementById("altura").innerHTML = `Sua altura é: ${altura}`
+      document.getElementById("status").innerHTML = `É solteiro?  ${status}`
+      document.getElementById("ocupacao").innerHTML = `Sua ocupação é: ${ocupacao}`
+      </script>
+</body>
+</html>

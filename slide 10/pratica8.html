@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        let vendas21 = [ ]
+        let variavel21 = 0
+
+        let vendas22 = [ ]
+        let variavel22 = 0
+
+        for (let i = 1; i <= 12; i++) {
+
+            variavel21 = Number(window.prompt(`Digite o valor de vendas do ${i}º mes de 2021: `))
+            vendas21.push(variavel21)
+        }
+        for (let i = 1; i <= 12; i++) {
+            variavel22 = Number(window.prompt(`Digite o valor de vendas do ${i}º mes de 2022: `))
+            vendas22.push(variavel22)
+        }
+        for (let i = 1; i <= 12; i++) {
+            document.write(`vendas do mês ${i}: <br>`,venda21+venda22)
+        }
+     
+    </script>  
+</body>
+</html>

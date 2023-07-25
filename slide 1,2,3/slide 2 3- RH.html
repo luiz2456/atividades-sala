@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RH</title>
+</head>
+<body>
+    <p id="bruto"></p>
+    <p id="aliqinss"></p>
+    <p id="aliqirrf"></p>
+
+    <script>
+        let bruto = Number(window.prompt(`Valor do salário bruto: `))
+        let aliqinss = Number(window.prompt(`Alíquota INSS: `))
+        let aliqirrs = Number(window.prompt(`Alíquota IRRF: `))
+
+        document.getElementById("bruto").innerHTML = `Seu salario bruto é: ${bruto}`
+        document.getElementById("aliqinss").innerHTML = `Alíquota INSS é: ${aliqinss}`
+        document.getElementById("aliqirrf").innerHTML = `Alíquota IRSS é: ${aliqinss}`
+    </script>
+</body>
+</html>

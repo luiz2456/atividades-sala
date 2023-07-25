@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let notas = []
+         let aprovados = []
+         let reprovados = []
+         let apro = 0
+         let repro = 0
+
+
+        for(let i=0;i<10;i++)
+        {
+            notas = Number(window.prompt('Digite nota: '))
+
+            if(notas>=7)
+            {
+                aprovados.push(notas)   
+                apro++                        
+            }
+
+            else if(notas<7)
+            {
+               reprovados.push(notas)
+               repro++
+            }
+
+          
+        }
+
+        document.write('aprovados: ', apro,'<br>')
+        document.write('reprovados: ', repro)
+    </script>  
+</body>
+</html>

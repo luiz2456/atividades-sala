@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let notas = []
+         let entrada = 0
+         let total = 0
+         let variavel = 0
+
+        for(let i=0;i<10;i++)
+        {
+            entrada = Number(window.prompt('Digite nota: '))
+
+            if(entrada>=0 && entrada<=10)
+            {
+                notas.push(entrada)
+                total = total+entrada
+                variavel++
+            }
+
+            else
+            {
+                document.write('nota inválida')
+            }
+
+          
+        }
+        document.write('A média é: ',total/variavel)
+    </script>  
+</body>
+</html>
